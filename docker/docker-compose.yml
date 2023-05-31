@@ -6,8 +6,8 @@ services:
     hostname: sillytavern
     image: cohee1207/sillytavern:latest
     ports:
-      - "8000:8000"
+      - "8006:8000"
     volumes:
-      - "./config:/home/node/app/config"
-      - "./config.conf:/home/node/app/config.conf"
+      - "/srv/dev-disk-by-uuid-3db1486a-88a7-4237-9715-9d88c6ae4ab5/storage/Programs/Tavern/config:/home/node/app/config"
+      - "/srv/dev-disk-by-uuid-3db1486a-88a7-4237-9715-9d88c6ae4ab5/storage/Programs/Tavern/config.conf:/home/node/app/config.conf"
     restart: unless-stopped
